@@ -1,0 +1,19 @@
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+
+img:hover {
+    filter: brightness(0.8);
+}
+a:hover {
+    filter: brightness(0.5);
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+}
+
+
+a is:(:nth-child(1),:nth-child(3)) {
+    @extend .wow;
+    @extend .animate__animated;
+    @extend .animate__backInLeft;
+}
